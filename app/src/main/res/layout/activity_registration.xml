@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".RegistrationActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_eclipse_left" />
+
+    <ImageView
+        android:id="@+id/regsitr_eclipse_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_eclipse_top"
+         />
+
+    <TextView
+        android:id="@+id/registr_text_Wellcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/welcome_onboard"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/registr_text_We_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/we_help_you_meet_up_you_tasks_on_time"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/registr_text_Wellcome"
+        app:layout_constraintStart_toStartOf="@+id/registr_text_Wellcome"
+        app:layout_constraintTop_toBottomOf="@+id/registr_text_Wellcome" />
+
+    <EditText
+        android:id="@+id/registr_name"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/rounding"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/enter_your_full_name"
+        android:inputType="textPersonName"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/registr_text_We_help"
+        app:layout_constraintStart_toStartOf="@+id/registr_text_We_help"
+        app:layout_constraintTop_toBottomOf="@+id/registr_text_We_help" />
+
+    <EditText
+        android:id="@+id/register_enter_email"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounding"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/enter_your_email"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/registr_name"
+        app:layout_constraintStart_toStartOf="@+id/registr_name"
+        app:layout_constraintTop_toBottomOf="@+id/registr_name" />
+
+    <EditText
+        android:id="@+id/register_passwrord"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounding"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/enter_password"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/register_enter_email"
+        app:layout_constraintStart_toStartOf="@+id/register_enter_email"
+        app:layout_constraintTop_toBottomOf="@+id/register_enter_email" />
+
+    <EditText
+        android:id="@+id/register_confirm_password"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounding"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/confirm_password"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/register_passwrord"
+        app:layout_constraintStart_toStartOf="@+id/register_passwrord"
+        app:layout_constraintTop_toBottomOf="@+id/register_passwrord"
+        tools:ignore="TextFields" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Register_button"
+        android:layout_width="309dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/register_confirm_password"
+        app:layout_constraintStart_toStartOf="@+id/register_confirm_password"
+        app:layout_constraintTop_toBottomOf="@+id/register_confirm_password"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

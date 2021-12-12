@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/welcome_back"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/MainSign_button"
+        android:layout_width="309dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sign_in"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/main_text_forgot"
+        app:layout_constraintStart_toStartOf="@+id/main_text_forgot"
+        app:layout_constraintTop_toBottomOf="@+id/main_text_forgot"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/main_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/ic_pictere1" />
+
+    <TextView
+        android:id="@+id/main_text_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/confirm_password"
+        app:layout_constraintStart_toStartOf="@+id/confirm_password"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounding"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/enter_your_email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/main_photos"
+        app:layout_constraintStart_toStartOf="@+id/main_photos"
+        app:layout_constraintTop_toBottomOf="@+id/main_photos"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/main_text_dont_have"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/MainSign_button"
+        app:layout_constraintStart_toStartOf="@+id/MainSign_button"
+        app:layout_constraintTop_toBottomOf="@+id/MainSign_button" />
+
+    <TextView
+        android:id="@+id/main_text_singn_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/main_text_dont_have"
+        app:layout_constraintStart_toStartOf="@+id/main_text_dont_have"
+        app:layout_constraintTop_toBottomOf="@+id/main_text_dont_have" />
+
+    <ImageView
+        android:id="@+id/main_elipse_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_eclipse_left" />
+
+    <ImageView
+        android:id="@+id/main_elipse_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_eclipse_top"
+         />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounding"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="@string/confirm_password"
+
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/enter_email"
+        app:layout_constraintStart_toStartOf="@+id/enter_email"
+        app:layout_constraintTop_toBottomOf="@+id/enter_email"
+        tools:ignore="TextFields" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
